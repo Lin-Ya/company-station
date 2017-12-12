@@ -1,0 +1,59 @@
+
+/*header样式*/
+html,
+body {
+    height: 100%;
+}
+header {
+    height: 100%;
+    background: #000;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg);
+    background-position: center;
+}
+.navbar {
+    position: relative;
+    height: 100%;
+}
+.navbar .logo {
+    float: left;
+    font-size: 28px;
+    margin: 50px 30px;
+    font-weight: bold;
+    color: #fed136;
+}
+.navbar .meanu {
+    float:right;
+    font-size: 28px;
+    margin: 50px 30px;
+}
+.navbar .meanu li {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+.navbar .intro {
+    color: #fff;
+    height: 100%;
+    padding: 300px 200px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+    text-align: center; 
+}
+.navbar .intro h2 {
+    font: italic 50px/1.5 Arial,sans-serif;
+}
+.navbar .intro h1 {
+    font: 80px/1.5 Arial,sans-serif;
+    font-weight: bold;
+}
+.navbar .intro button {
+    font-size: 30px;
+    color: #fff;
+    padding: 15px 40px;
+    margin-top: 30px;
+    background-color: #fed136;
+    border-radius: 4px;
+    border-style: none;
+}
