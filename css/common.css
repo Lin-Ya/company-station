@@ -16,7 +16,7 @@ button{
     cursor: pointer;
 }
 .layout{
-    min-width: 800px;
+    min-width: 1200px;
     margin: 0 auto;
 }
 .clearfix::after {
