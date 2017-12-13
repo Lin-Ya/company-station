@@ -33,12 +33,11 @@ header {
 }
 .navbar .intro {
     color: #fff;
-    height: 100%;
-    padding: 300px 200px;
-    /* position: absolute;
-    top: 50%;
+    /*padding: 500px 200px;*/
+    position: absolute;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%,-50%);*/
+    transform: translate(-50%,-50%);
     text-align: center; 
 }
 .navbar .intro h2 {
@@ -53,7 +52,64 @@ header {
     color: #fff;
     padding: 15px 40px;
     margin-top: 30px;
-    background-color: #fed136;
+    background-color: #ddb135;
     border-radius: 4px;
     border-style: none;
+    opacity: 1.0;
 }
+.navbar .intro button:hover {
+    background-color: #fed136;
+}
+
+/*main {*/
+    /*height: 300%;*/
+/*}*/
+
+#section-ser {
+    padding-bottom: 200px;
+}
+section .section-head {
+    text-align: center;
+    height: 70%;
+    background-color: #fff;
+    margin-top: 120px;
+}
+
+section .section-head h2 {
+    font: 45px italic normal Arial,sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section .section-head p {
+    font: italic 20px/1.5 Arial,sans-serif;
+    margin-bottom: 75px;
+    opacity: 0.7;
+}
+
+.rows {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+.rows .rows-cell {
+    width: 300px;
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+}
+.rows .cell3 {
+    margin-right: -50px;
+}
+.rows-cell .logo {
+    display: inline-block;
+    font: normal 75px iconfont;
+    background-color: #fed136;
+    color: #fff;
+    padding: 30px;
+    border: 1px solid #fed136;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+

@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 507577 */
+    src: url('//at.alicdn.com/t/font_507577_p8l1oiymg7kl0udi.eot');
+    src: url('//at.alicdn.com/t/font_507577_p8l1oiymg7kl0udi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_507577_p8l1oiymg7kl0udi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_507577_p8l1oiymg7kl0udi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_507577_p8l1oiymg7kl0udi.svg#iconfont') format('svg');
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +26,20 @@ button{
 .layout{
     min-width: 1200px;
     margin: 0 auto;
+    text-align: cente;
 }
 .clearfix::after {
     content: '';
     display: inline-block;
     clear: both;
+}
+
+.logo {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: iconfont;
 }
