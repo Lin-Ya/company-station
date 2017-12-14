@@ -1,136 +1,196 @@
 
 /*header样式*/
 html,
-body {
+body
+{
     height: 100%;
 }
-header {
+header
+{
     height: 100%;
+
     background: #000;
     background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg);
     background-position: center;
 }
-.navbar {
+.navbar
+{
     position: relative;
+
     height: 100%;
 }
-.navbar .logo {
-    float: left;
+.navbar .logo
+{
     font-size: 28px;
-    margin: 50px 30px;
     font-weight: bold;
+
+    float: left;
+
+    margin: 50px 30px;
+
     color: #fed136;
 }
-.navbar .meanu {
-    float:right;
+.navbar .meanu
+{
     font-size: 28px;
+
+    float: right;
+
     margin: 50px 30px;
 }
-.navbar .meanu li {
+.navbar .meanu li
+{
     display: inline-block;
     float: left;
+
     padding-right: 20px;
 }
-.navbar .intro {
-    color: #fff;
+.navbar .intro
+{
     /*padding: 500px 200px;*/
     position: absolute;
     top: 65%;
     left: 50%;
+
     transform: translate(-50%,-50%);
-    text-align: center; 
+    text-align: center;
+
+    color: #fff;
 }
-.navbar .intro h2 {
+.navbar .intro h2
+{
     font: italic 50px/1.5 Arial,sans-serif;
 }
-.navbar .intro h1 {
+.navbar .intro h1
+{
     font: 65px/1.5 Arial,sans-serif;
     font-weight: bold;
 }
-.navbar .intro button {
+.navbar .intro button
+{
     font-size: 30px;
-    color: #fff;
-    padding: 15px 40px;
+
     margin-top: 30px;
-    background-color: #ddb135;
-    border-radius: 4px;
-    border-style: none;
+    padding: 15px 40px;
+
     opacity: 1.0;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+    background-color: #ddb135;
 }
-.navbar .intro button:hover {
+.navbar .intro button:hover
+{
     background-color: #fed136;
 }
 
 /*main {*/
-    /*height: 300%;*/
+/*height: 300%;*/
 /*}*/
 
-#section-ser {
+#section-ser
+{
     padding-bottom: 100px;
 }
-section .section-head {
-    text-align: center;
+section .section-head
+{
     height: 70%;
     margin-top: 120px;
+
+    text-align: center;
 }
 
-section .section-head h2 {
+section .section-head h2
+{
     font: 45px italic normal Arial,sans-serif;
     font-weight: bold;
+
     margin-bottom: 20px;
 }
 
-section .section-head p {
+section .section-head p
+{
     font: italic 20px/1.5 Arial,sans-serif;
+
     margin-bottom: 75px;
-    opacity: 0.7;
+
+    opacity: .7;
 }
 
-.rows {
-    margin: 0 auto;
-    width: 1000px;
+.rows
+{
     overflow: hidden;
+
+    width: 1000px;
+    margin: 0 auto;
 }
-.rows .rows-cell {
-    width: 300px;
+.rows .rows-cell
+{
     display: inline-block;
     float: left;
+
+    width: 300px;
     margin-right: 50px;
+
     text-align: center;
 }
-.rows .cell3 {
+.rows .cell3
+{
     margin-right: -50px;
 }
-.rows-cell .logo {
-    display: inline-block;
+.rows-cell .logo
+{
     font: normal 75px iconfont;
-    background-color: #fed136;
-    color: #fff;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
     padding: 30px;
+
+    color: #fff;
     border: 1px solid #fed136;
     border-radius: 100px;
-    margin-bottom: 15px;
-}
-#section-pro {
-    background-color: #f2f2f2;
-    overflow: hidden;
-    padding-bottom: 100px;
-}
-#section-pro figure img {
-    widht: 100%;
-    height: 270px;
-    margin-bottom: 20px;
-}
-#section-pro .section-figure {
-    margin: 0 auto;
-    width: 1000px;
+    background-color: #fed136;
 }
 
-#section-pro figure {
-    text-align: center;
+#section-pro
+{
+    overflow: hidden;
+
+    padding-bottom: 100px;
+
+    background-color: #f2f2f2;
+}
+#section-pro figure img
+{
+    height: 270px;
+    margin-bottom: 20px;
+
+    widht: 100%;
+}
+#section-pro .section-figure
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#section-pro figure
+{
     float: left;
-    background-color: #fff;
+
+    margin: 0 10px 30px;
     padding-bottom: 10px;
+
+    text-align: center;
+
+    background-color: #fff;
+
     wdith: calc(33.33% - 20px);
-    margin: 0px 10px 30px;
+}
+
+#section-pro .section-figure figure::hover {
+    content: '&#xe651;';
+    color: #fff;
+    text-align: center;
+    background-color: 
 }
