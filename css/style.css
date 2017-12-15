@@ -66,7 +66,7 @@ header
     font: 65px/1.5 Arial,sans-serif;
     font-weight: bold;
 }
-.navbar .intro button
+button
 {
     font-size: 30px;
 
@@ -79,28 +79,25 @@ header
     border-radius: 4px;
     background-color: #ddb135;
 }
-.navbar .intro button:hover
+button:hover
 {
     background-color: #fed136;
 }
 
-/*main {*/
-/*height: 300%;*/
-/*}*/
 
 #section-ser
 {
     padding-bottom: 100px;
 }
-section .section-head
+main section .section-head
 {
     height: 70%;
-    margin-top: 120px;
+    padding-top: 120px;
 
     text-align: center;
 }
 
-section .section-head h2
+main section .section-head h2
 {
     font: 45px italic normal Arial,sans-serif;
     font-weight: bold;
@@ -108,7 +105,7 @@ section .section-head h2
     margin-bottom: 20px;
 }
 
-section .section-head p
+main section .section-head p
 {
     font: italic 20px/1.5 Arial,sans-serif;
 
@@ -153,6 +150,7 @@ section .section-head p
     background-color: #fed136;
 }
 
+
 #section-pro
 {
     overflow: hidden;
@@ -165,12 +163,11 @@ section .section-head p
 {
     height: 270px;
     margin-bottom: 20px;
-
     widht: 100%;
 }
 #section-pro .section-figure
 {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -178,19 +175,283 @@ section .section-head p
 {
     float: left;
 
-    margin: 0 10px 30px;
+    margin: 0 10px 40px;
     padding-bottom: 10px;
 
     text-align: center;
-
+    box-shadow: 2px 2px 10px 5px rgb(196, 196, 196);
     background-color: #fff;
-
+    position: relative;
     wdith: calc(33.33% - 20px);
 }
+.section-figure figure .hover-icon .icon-bg{
+    background-color: rgba(238, 224, 24, 0.76); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    display: none;
+}
 
-#section-pro .section-figure figure::hover {
-    content: '&#xe651;';
+.section-figure figure .hover-icon .icon-bg i{
+    font-style: normal;
+    font-family: iconfont;
+    font-weight: bold;
+    font-size: 80px;
     color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    user-select: none;
+
+}
+.section-figure figure .hover-icon:hover .icon-bg{
+    display: block;
+    cursor: pointer;
+}
+#section-about {
+    overflow: hidden;
+    min-width: 1500px;
+}
+#section-about ul {
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+#section-about ul li {
+    list-style: none;
+    margin-bottom: 60px;
+    position: relative;
+    min-height: 220px;
+    min-width: 1200px;
+}
+
+
+ul li .timeline-text h4 {
+    font-size: 20px;
+    line-height: 1.7;
+}
+ul li .timeline-text p {
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 2;
+}
+/* 选择奇数li */
+ul li:nth-child(odd) .timeline-text {
+    width: 460px;
+    float: left;
+    text-align: right;
+    margin-left: 170px;
+}
+/* 选择偶数li */
+ul li:nth-child(even) .timeline-text {
+    width: 460px;
+    float: right;
+    text-align: left;
+    margin-right: 170px;
+}
+
+ul li .timeline-img {
     text-align: center;
-    background-color: 
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #f5edc8;
+    background-color: rgb(255, 203, 34);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+ul li .timeline-img img {
+    width: 180px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+ul li:last-child .timeline-img span {
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    width: 150px;
+    font-size: 25px;
+    margin-top: 45px;
+    color: #fff;
+}
+
+/* 时间轴中线 */
+#section-about ul::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1300px;
+    border: 2px solid #f5edc8;
+    left: 50%;
+}
+
+/* section-team */
+#section-team {
+    padding: 30px 0 120px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+#section-team ul {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#section-team ul li {
+    display: inline-block;
+    float: left;
+    margin: 0 20px;
+    width: calc(33.33% - 40px);
+    
+}
+
+#section-team ul li img {
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+#section-team ul li h3 {
+    margin-top: 10px;
+}
+
+#section-team ul li p {
+    margin: 10px;
+    color: rgb(136, 136, 136)
+}
+
+.blog-link a {
+    font-size: 40px;
+    margin: 15px 5px;
+    color: #000;
+}
+
+.blog-link a:hover {
+    color: rgb(255, 225, 55);
+}
+
+#section-team > p {
+    color: #4b4b4b;
+    width: 750px;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+aside ul {
+    width: 980px;
+    margin: 0 auto;
+}
+aside ul li {
+    padding: 50px 0;
+    list-style: none;
+    float: left;
+    margin: 0 20px;
+    width: calc(25% - 40px);
+}
+
+#section-contact {
+    color: #fff;
+    height: 100%;
+    background-color: #1b1b1b;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
+    
+}
+
+#section-contact > .from {
+    width: 1200px;
+    margin: 0 auto;
+    
+} 
+.from .from-left {
+    float: left;
+    width: 50%;
+}
+
+.from .from-left input {
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    display: block;
+    height: 60px;
+    width: 500px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+.from .from-right {
+    float: right;
+    width: 50%;
+}
+
+.from .from-right textarea{
+    padding: 20px;
+    font-size: 20px;
+    float: left;
+    width: 500px; 
+    height: 200px;
+    margin-left: 20px;
+    border: 1px solid #303030;
+    border-radius: 10px;
+}
+
+#section-contact .button {
+    width: 350px;
+    margin: 30px auto;
+}
+
+#section-contact .button button {
+    width: 350px;
+}
+
+footer {
+    padding: 40px 0px 30px 0px;
+    
+}
+
+footer ul {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer ul li {
+    float: left;
+    margin: 0 20px;
+    width: calc(33.33% - 40px);
+}
+
+footer ul li a {
+    color: rgb(194, 149, 0);
+    vertical-align: middle;
+}
+
+footer ul li div {
+    display: inline-block;
+    height: 100%;
+    border: 1px solid white;
+    width: 10px;
+}
+
+footer ul li.blog-link{
+    margin-top: -10px;
+    
 }

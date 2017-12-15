@@ -26,11 +26,10 @@ button{
 .layout{
     min-width: 1200px;
     margin: 0 auto;
-    text-align: cente;
 }
 .clearfix::after {
     content: '';
-    display: inline-block;
+    display: block;
     clear: both;
 }
 
